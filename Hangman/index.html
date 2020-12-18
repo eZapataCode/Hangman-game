@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ES">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="hangman-image-container">
+            <img src="img/hang0.png" class="hang-image">
+        </div>
+        <div class="word-container"></div>
+        <form name="letterForm" class="letter-form">
+            <label for="letter">
+                Try a letter<br />
+                <input type="text" name="letterInput" maxlength="1" id="letter" class="letter-input">
+            </label>
+            <input type="submit" class="submit-input btn" value="Submit">
+        </form>
+
+        <div class="menu-container gameover-menu-container hide">
+            <div class="menu">
+                <h2>Game Over</h2>
+                <button class="btn btn-try-again">Try Again</button>
+            </div>
+        </div>
+        <div class="menu-container win-menu-container hide">
+            <div class="menu">
+                <h2>You win!</h2>
+                <button class="btn btn-try-again">Try Again</button>
+            </div>
+        </div>
+        <div class="menu-container start-game-container">
+            <div class="menu start-game-menu">
+                <h1 class="title">Welcome to Hangman game!</h1>
+                <button class="btn btn-start">Start</button>
+            </div>
+        </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
